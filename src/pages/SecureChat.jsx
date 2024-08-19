@@ -1,8 +1,7 @@
-import { people01, people02, people03 } from "../assets"
+import { people01, people02, people03 } from "../assets";
 
 const SecureChat = () => {
   return (
-  
     <div className="flex flex-col mt-2 max-md:mt-10 max-md:max-w-full">
       <div className="self-start mt-2 ml-3 text-5xl font-bold text-black max-md:mt-10 max-md:max-w-full max-md:text-4xl">
         Chat with your doctor
@@ -55,7 +54,7 @@ const SecureChat = () => {
           <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
             <div className="flex flex-col w-[44%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col grow pb-12 border-r border-solid border-r-zinc-400 max-md:max-w-full">
-                <div className="flex gap-5 justify-between px-8 py-3 w-full bg-fuchsia-200 max-md:flex-wrap max-md:px-5 max-md:max-w-full">
+                <div className="flex gap-5 justify-between px-8 py-3 w-full bg-red-200 max-md:flex-wrap max-md:px-5 max-md:max-w-full">
                   <div className="flex gap-3.5 justify-between">
                     <img
                       loading="lazy"
@@ -237,10 +236,7 @@ const SecureChat = () => {
         </div>
       </div>
     </div>
+  );
+};
 
-
-
-  )
-}
-
-export default SecureChat
+export default SecureChat;

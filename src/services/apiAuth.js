@@ -35,7 +35,7 @@ export async function loginPatient1(data) {
   const { userData } = await res.json();
   return userData;
 }
- 
+
 export async function loginPatient(data) {
   console.log(data);
   const res = await axios.post(`${API_URL}api/patients/login-patient`, data);

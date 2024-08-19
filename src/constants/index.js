@@ -119,6 +119,7 @@ export const footerLinks = [
       },
     ],
   },
+
   {
     title: "Community",
     links: [
@@ -144,6 +145,7 @@ export const footerLinks = [
       },
     ],
   },
+  
   {
     title: "Partner",
     links: [

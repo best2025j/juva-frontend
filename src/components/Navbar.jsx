@@ -8,54 +8,60 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar">
-      <Link to="/login" className="text-2xl font-semibold flex items-center space-x-3 text-primary">
+    <nav className="w-full flex h-14 py-6 justify-between items-center">
+      <Link
+        to="/login"
+        className="text-2xl font-semibold flex items-center space-x-3 text-primary"
+      >
         <img src={logo} alt="" className="w-10 inline-block items-center" />
         <span> JUVA </span>
       </Link>
 
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1 pl-[100px]">
+      <ul className="sm:flex hidden justify-end items-center flex-1 pl-[100px]">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-inter font-normal cursor-pointer text-[16px] ${
+            className={`font-inter font-normal cursor-pointer text-[14px] ${
               active === nav.title ? "text-white" : "text-primary"
-            } ${index === navLinks.length - 1 ? "mr-0" : "mr-10" }`}
+            } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
           >
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>
         ))}
+
         <li className="px-14">
           <Link
             to="/login" // Changed to '/login' to navigate to the login page
-            className="font-inter font-medium text-[18px] text-white bg-primary px-6 py-2 rounded"
+            className="font-inter font-medium text-[14px] text-white bg-primary px-6 py-2 rounded-full"
           >
             Login/Sign Up
           </Link>
         </li>
       </ul>
 
-      <div className="sm:hidden flex flex-1 justify-end items-center">
+      {/* mobile view */}
+      <div className="md:hidden flex flex-1 justify-end items-center">
         <img
           src={toggle ? close : menu}
           alt="menu"
-          className="w-[28px] h-[28px] object-contain"
+          className="w-[20px] h-[20px] object-contain"
           onClick={() => setToggle(!toggle)}
         />
 
         <div
           className={`${
             !toggle ? "hidden" : "flex"
-          } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+          } p-8 bg-black-gradient absolute top-[58px] right-0 justify-center flex mx-auto left-0 w-full h-full z-10 rounded`}
         >
-          <ul className="list-none flex justify-end items-start flex-1 flex-col">
+
+          <ul className="flex justify-center items-center w-full flex-1 flex-col">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
                 className={`font-poppins font-medium cursor-pointer text-[16px] ${
                   active === nav.title ? "text-white" : "text-secondary"
-                } ${index === navLinks.length - 1 ? "mb-0" : "mb-4", "pb-5"}`}
+                } ${(index === navLinks.length - 1 ? "mb-0" : "mb-4", "pb-5")}`}
                 onClick={() => setActive(nav.title)}
               >
                 <a href={`#${nav.id}`}>{nav.title}</a>
