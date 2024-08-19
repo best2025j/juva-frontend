@@ -1,5 +1,4 @@
-
-
+import { Link } from "react-router-dom";
 import { logo } from "../../assets";
 import { MiniNavbar } from "../../components";
 import { useNavigate } from "react-router-dom";
@@ -49,10 +48,9 @@ const Signup = () => {
           </button>
           <p className="mt-4 leading-6 text-center font-inter text-zinc-800 max-md:max-w-full">
             Already have an account?{" "}
-            <a href="/login">
-              {" "}
+            <Link to="/login">
               <span className="font-extrabold text-purple-800">Login</span>
-            </a>
+            </Link>
           </p>
         </div>
       </div>
