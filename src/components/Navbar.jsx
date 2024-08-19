@@ -17,7 +17,7 @@ const Navbar = () => {
         <span> JUVA </span>
       </Link>
 
-      <ul className="sm:flex hidden justify-end items-center flex-1 pl-[100px]">
+      <ul className="md:flex hidden justify-end items-center flex-1 pl-[100px]">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
@@ -55,11 +55,11 @@ const Navbar = () => {
           } p-8 bg-black-gradient absolute top-[58px] right-0 justify-center flex mx-auto left-0 w-full h-full z-10 rounded`}
         >
 
-          <ul className="flex justify-center items-center w-full flex-1 flex-col">
+          <ul className="flex justify-center items-center w-full flex-1 flex-col h-full">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                className={`font-poppins font-medium cursor-pointer text-[14px] ${
                   active === nav.title ? "text-white" : "text-secondary"
                 } ${(index === navLinks.length - 1 ? "mb-0" : "mb-4", "pb-5")}`}
                 onClick={() => setActive(nav.title)}
@@ -67,10 +67,11 @@ const Navbar = () => {
                 <a href={`#${nav.id}`}>{nav.title}</a>
               </li>
             ))}
+
             <li className="mb-4">
               <Link
                 to="/login"
-                className="font-inter font-medium text-[18px] text-white bg-primary px-6 py-2 rounded"
+                className="font-inter font-medium text-[14px] text-white bg-primary px-6 py-2 rounded-full"
               >
                 Login/Sign Up
               </Link>
