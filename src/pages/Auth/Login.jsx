@@ -42,10 +42,10 @@ const Login = () => {
 
   return (
     <>
-      <div className="flex flex-col px-4 pt-2 w-full h-full bg-fuchsia-200">
+      <div className="flex flex-col px-4 pt-2  w-full h-full bg-fuchsia-200">
         <MiniNavbar />
         <div
-          className="flex flex-col self-center px-2 md:px-16 m-6 md:py-2 mt-2 md:mt-8 max-w-lg text-base bg-white rounded-3xl
+          className="flex flex-col self-center mx-auto px-2 md:px-16 m-6 md:py-2 mt-2 md:mt-2 max-w-lg text-base bg-white rounded-3xl
          "
         >
           <div className="self-center mt-8 text-2xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-black font-inter">
@@ -91,7 +91,7 @@ const Login = () => {
 
             <button
               type="submit"
-              className="justify-center items-center text-sm px-16 py-3 mt-7 w-full font-semibold text-white whitespace-nowrap bg-purple-800 rounded-lg max-md:px-5 max-md:max-w-full"
+              className="justify-center items-center text-sm py-3 mt-7 w-full font-semibold text-white whitespace-nowrap bg-purple-800 rounded-lg max-md:px-5 max-md:max-w-full"
             >
               Login to your account
             </button>
@@ -99,10 +99,12 @@ const Login = () => {
 
           <button
             onClick={handleSignupClick}
-            className="justify-center items-center px-16 py-3 mt-4 mb-8 font-semibold text-center text-purple-800 whitespace-nowrap bg-fuchsia-200 rounded-lg max-md:px-5 max-md:max-w-full"
+            className="justify-center items-center py-3 mt-4 mb-8 font-semibold text-center text-purple-800 whitespace-nowrap bg-fuchsia-200 rounded-lg max-md:px-5 max-md:max-w-full"
           >
             Click here to{" "}
-            <span className="font-extrabold text-purple-800 text-sm">Sign Up</span>
+            <span className="font-extrabold text-purple-800 text-sm">
+              Sign Up
+            </span>
           </button>
         </div>
       </div>

@@ -17,18 +17,16 @@ const Signup = () => {
 
   return (
     <>
-      <div className="flex flex-col px-4 pt-2 w-full h-full bg-fuchsia-200">
+      <div className="flex flex-col px-4 pt-2 w-full h-screen bg-fuchsia-200">
         <MiniNavbar />
         <div
-          className="flex flex-col self-center px-4 md:px-16 m-6 md:py-6 py-8 md:mt-8 max-w-lg text-base bg-white rounded-3xl
+          className="flex flex-col justify-center mx-auto self-center px-4 md:px-16 m-6 md:py-6 py-8 md:mt-8 max-w-lg text-base bg-white rounded-3xl
          "
         >
           {" "}
           <div className="self-center mt-8  font-bold tracking-tighter leading-6 md:leading-10 text-black font-inter">
             <img src={logo} alt="" className="grow self-center mx-auto" />
-            <span className="text-2xl md:text-4xl">
-              Welcome to JUVA
-            </span>
+            <span className="text-2xl md:text-4xl">Welcome to JUVA</span>
           </div>
           <p className="mt-4 text-center text-sm md:text-base  font-inter text-zinc-800">
             We provide healthcare services for all by offering remote medical
