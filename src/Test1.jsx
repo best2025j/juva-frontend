@@ -8,9 +8,9 @@ function Test1() {
         <h1 className="text-3xl">Your health status</h1>
       </div>
 
-      <div className="flex gap-1 mt-4 whitespace-nowrap text-stone-500 max-md:flex-wrap max-md:max-w-full">
+      <div className="flex gap-1 mt-4 whitespace-nowrap text-stone-500">
         <div className="flex flex-col w-40 h-full items-center rounded-full text-white bg-purple-800">
-          <div className="flex gap-2 items-center">
+          <div className="flex items-center gap-2">
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/eb66570c1c3aaf50a504e78590db9c110260bf577ec95d2016fa373f7e76f8d7?"
