@@ -1,6 +1,6 @@
 import Container from "./Container";
 
-function Main() {
+function  Main() {
   return (
     <main className="flex-1 bg-white">
       <Container />

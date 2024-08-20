@@ -1,19 +1,13 @@
-import { useState } from 'react';
-import Calendar from 'react-calendar';
-import 'react-calendar/dist/Calendar.css';
- 
+import { useState } from "react";
+import Calendar from "react-calendar";
+import "react-calendar/dist/Calendar.css";
+
 export default function CalendarGfg() {
-    const [value, onChange] = useState(new Date());
- 
-    return (
-        <div>
+  const [value, onChange] = useState(new Date());
 
-            <Calendar
-                onChange={onChange}
-                value={value}
-
-                
-            />
-        </div>
-    );
+  return (
+    <div className="">
+      <Calendar onChange={onChange} value={value} />
+    </div>
+  );
 }
